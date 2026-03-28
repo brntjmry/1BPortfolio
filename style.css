@@ -1,0 +1,100 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+    padding:30px;
+    max-width:900px;
+    margin:auto;
+}
+
+/* Header */
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#0a66c2;
+    margin-bottom:5px;
+}
+
+header p{
+    color:#555;
+}
+
+/* Section */
+section{
+    margin-bottom:25px;
+}
+
+/* Titles */
+h2{
+    color:#0a66c2;
+    margin-top:20px;
+    margin-bottom:10px;
+    border-bottom:2px solid #0a66c2;
+    padding-bottom:5px;
+}
+
+h3{
+    margin-top:15px;
+    color:#444;
+}
+
+h4{
+    margin-top:10px;
+    color:#666;
+}
+
+/* Paragraph */
+p{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/* Image */
+img{
+    border-radius:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    max-width:100%;
+}
+
+/* Lists */
+ul{
+    margin-left:25px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+li{
+    margin-bottom:5px;
+}
+
+/* Links */
+a{
+    color:#0a66c2;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    text-decoration:underline;
+    color:#084a91;
+}
+
+/* Lines */
+hr{
+    margin-top:20px;
+    margin-bottom:20px;
+    border:none;
+    border-top:1px solid 
