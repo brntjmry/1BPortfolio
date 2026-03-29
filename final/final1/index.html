@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Homepage</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+        padding: 20px;
+      }
+
+      .header {
+        background: #16a085;
+        color: white;
+        padding: 15px;
+      }
+
+      .header h1 {
+        font-size: 26px;
+      }
+
+      .header p {
+        font-size: 13px;
+      }
+
+      .container {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .menu {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu div {
+        background: #e0e0e0;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+      }
+
+      .menu .active {
+        background: #16a085;
+        color: white;
+      }
+
+      .content {
+        flex: 3;
+        background: white;
+        padding: 15px;
+      }
+
+      .content h2 {
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      .sidebar {
+        flex: 1.5;
+        background: #3498db;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 10px;
+        background: #ddd;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          flex-wrap: wrap;
+        }
+
+        .menu {
+          flex: 1 1 30%;
+        }
+
+        .content {
+          flex: 1 1 65%;
+        }
+
+        .sidebar {
+          flex: 1 1 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to My Homepage</h1>
+      <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div class="container">
+      <div class="menu">
+        <div class="active">Stylesheet 1</div>
+        <div>Stylesheet 2</div>
+        <div>Stylesheet 3</div>
+        <div>Stylesheet 4</div>
+        <div>No Stylesheet</div>
+      </div>
+
+      <div class="content">
+        <h2>Same Page Different Stylesheets</h2>
+
+        <p>
+          This is a demonstration of how different stylesheets can change the
+          layout of your HTML page. You can change the layout of this page by
+          selecting different stylesheets in the menu, or by selecting one of
+          the following links:
+        </p>
+
+        <p>
+          <a href="#">Stylesheet1</a>, <a href="#">Stylesheet2</a>,
+          <a href="#">Stylesheet3</a>,
+          <a href="#">Stylesheet4</a>
+        </p>
+
+        <h3>No Styles</h3>
+        <p>
+          This page uses DIV elements to group different sections of the HTML
+          page. Click here to see how the page looks like with no stylesheet:
+          <a href="#">No Stylesheet</a>.
+        </p>
+      </div>
+
+      <div class="sidebar">
+        <h3>Side-Bar</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt.
+      </p>
+    </div>
+  </body>
+</html>
